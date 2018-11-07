@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name='django-model-ident',
-    version=version,
+    version=model_ident.__version__,
     description="Django app to provide classes quick pk only lookups",
     long_description=long_description,
     long_description_content_type="text/markdown",
