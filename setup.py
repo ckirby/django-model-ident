@@ -1,40 +1,20 @@
+import setuptools
 
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+with open("README.rst", "r") as fh:
+    long_description = fh.read()
 
-import os
-import sys
-
-import model_ident
-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
-
-version = model_ident.__version__
-
-#readme = open('README.rst').read()
-readme = "Write README"
-setup(
+setuptools.setup(
     name='django-model-ident',
     version=version,
-    description="""App for generating forms allowing users to build model queries""",
-    long_description=readme,
+    description="Django app to provide classes quick pk only lookups",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Chaim Kirby',
     author_email='chaim.kirby@gmail.com',
     url='https://github.com/ckirby/django-model-ident',
-    packages=[
-        'model_ident',
-    ],
-    include_package_data=True,
-    install_requires=[
-    ],
-    license="BSD",
-    zip_safe=False,
-    keywords='django-model-ident',
+    packages=setuptools.find_packages(),
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
