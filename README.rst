@@ -25,6 +25,11 @@ Requirements
 * Django 1.11+
 * Python 3.4+
 
+Installation
+------------
+
+pip install django-model-ident
+
 Usage
 -----
 
