@@ -1,6 +1,6 @@
-=====================
+==================
 django-model-ident
-=====================
+==================
 
 .. image:: https://badge.fury.io/py/django-model-ident.png
     :target: https://badge.fury.io/py/django-model-ident
