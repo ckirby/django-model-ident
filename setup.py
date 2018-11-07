@@ -1,4 +1,5 @@
 import setuptools
+import model_ident
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
