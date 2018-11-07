@@ -33,5 +33,5 @@ Add 'model-ident' to your INSTALLED_APPS
 How Does It Work
 ----------------
 
-ON ready() django-model-ident monkey patches all the models found in your INSTALLED_APPS with the method ident_(pk).
+On ready() django-model-ident monkey patches all the models found in your INSTALLED_APPS with the method ident_(pk).
 This calls <model>._base_manager.get(pk=pk). We use _base_manager so as not to get confused by changes in ModelManagers.
